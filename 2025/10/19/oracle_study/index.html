@@ -14,7 +14,7 @@
 <meta property="og:description" content="1、Oracle的目录1. admin&#x2F; 存放数据库的管理文件，按数据库实例SID（Oracle数据库实例的唯一标识）划分子目录。实例目录下包含：  adump&#x2F; ：     存放审计日志文件（数据库的操作记录） bdump&#x2F; ：     后台进程跟踪文件。 pfile&#x2F; ：     数据库参数文件的备份。  2.diag&#x2F; （Oacle11及以上">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-10-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-10-20T14:51:48.924Z">
+<meta property="article:modified_time" content="2025-10-20T15:07:11.655Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="-初学 -oracle -数据库">
 <meta name="twitter:card" content="summary">
@@ -108,13 +108,19 @@
 </ul>
 <h4 id="2-diag-（Oacle11及以上版本）"><a href="#2-diag-（Oacle11及以上版本）" class="headerlink" title="2.diag&#x2F; （Oacle11及以上版本）"></a>2.diag&#x2F; （Oacle11及以上版本）</h4><p><strong>自动诊断仓库</strong>的根目录，日志管理目录，集中存放了数据库的诊断日志，替代了早期分散的日志文件。</p>
 <ul>
-<li>核心子目录diag&#x2F;rdbms&#x2F;&amp;ltsid&#x2F;sid&#x2F;</li>
+<li>核心子目录diagrdbms&#x2F; &lt; sid &gt; &#x2F; &lt; sid &gt;&#x2F; ：数据库实例的诊断目录，包含：<ul>
+<li>alert&#x2F; ： 告警日志，记录数据库启动、关闭、错误等关键事件。</li>
+<li>trace&#x2F; ： 进程跟踪日志文件（sql跟踪、后台进程异常跟踪）</li>
+<li>incident&#x2F; ： 数据库发生异常事件（如ORA-600错误）时生成的日志文件。</li>
 </ul>
+</li>
+</ul>
+<h4 id="3-product"><a href="#3-product" class="headerlink" title="3. product&#x2F;"></a>3. product&#x2F;</h4><p>Oracle软件的安装目录。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/19/oracle_study/" data-id="cuidC45AiWcZ6t8UsIcO7bCzP" data-title="oracle的粗浅学习" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/10/19/oracle_study/" data-id="cuidB1tXy9F9wYuzmJ9_pbC73" data-title="oracle的粗浅学习" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
